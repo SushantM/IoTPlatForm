@@ -1,7 +1,7 @@
 # IoTPlatForm
 
 
-Module1: Gateway, Sensor
+# Module1: Gateway, Sensor
 
 Inside "APK" directory there is an android app file named "Gateway.apk". Install this app on android device which you want to treat as gateway for sensors. Do same for "Sensor.apk".
 
@@ -13,7 +13,7 @@ To Start Gateway
 To Start Sensor
 	-On opening Sensor app on sensor device, click on "Start Sensor" button to activate sensor.
 
-Module2: Filter Server, Registry Repository Security Severs
+# Module2: Filter Server, Registry Repository Security Severs
 
 Filter Server
 Inside "filter_server"
@@ -66,7 +66,7 @@ Need to install the required npm packages before running this.
 >> npm build
 >> npm start
 
-Module 3
+# Module 3
 App Engine server and apps
 
 Start the server to register new apps
@@ -89,3 +89,15 @@ Enter postAppData_helper directory and run helper.js
 
 >>node helper.js
 
+
+This platform was developed by following students under the guidance of Mr. Ramesh Loganathan
+as part of Internal of Application server course.
+1. Gangasagar Patil
+2. Poorva Bhawsar
+3. Sushant Makode
+4. Kedar Biradar
+5. Omprakash Shewale
+6. Nikhil Barote
+7. Harshad Jalan
+8. Kapil Chhajer
+9. Diwas Joshi
