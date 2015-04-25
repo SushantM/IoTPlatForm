@@ -1,0 +1,16 @@
+{
+  "name": "appengine",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "3.x",
+    "mongodb": "^2.0.27",
+    "node-rest-client": "^1.4.8"
+  }
+}

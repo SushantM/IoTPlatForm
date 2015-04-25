@@ -1,0 +1,7 @@
+{
+"app_engine_port":3005,
+"app_engine_ip":"localhost",
+"app_registering_port":3000,
+"repo_ip":"10.42.0.37",
+"repo_port":8081
+}

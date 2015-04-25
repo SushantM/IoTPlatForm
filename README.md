@@ -66,4 +66,26 @@ Need to install the required npm packages before running this.
 >> npm build
 >> npm start
 
+Module 3
+App Engine server and apps
+
+Start the server to register new apps
+
+Enter app_register folder
+Config file can be edited to change ip and port addresses.
+
+>> node server.js
+
+Now apps can be added by sending a POST request to the server or through the web UI
+
+Start the server for applications
+
+Enter postAppData folder
+Config file can be edited to change ip and port addresses.
+
+>> node server.js
+
+Enter postAppData_helper directory and run helper.js 
+
+>>node helper.js
 
