@@ -16,6 +16,7 @@ To Start Sensor
 Module2: Filter Server, Registry Repository Security Severs
 
 Filter Server
+Inside "filter_server"
 
 Inside "receive_data" directory, there are files for creating socket server and receiving data
 and to post the data to the app engine upon matching the conditions.
@@ -39,6 +40,29 @@ using "detect_data.js" script previously run.
 >> node server.js
 
 Registry Repository Security Severs
+Inside "registry-repository"
 
+Inside "boot_strap" directory, socket server which exposes socket APIS to gateway are kept.
+These APIs help in boot straping the system and updating the status related to sensors.
+Database used for registry, repository and security is "iotdb"
+
+run
+
+>> bash setup.sh
+>> node boot_strap.sh
+
+Inside "api_server" directory, all the apis for accessing the repository and registry are kept.
+Install all the packages needed using npm. To expose the APIs, run
+
+>> node server.js
+
+Web UI Portal
+
+Inside "web_admin_portal" directory, all the code related to UI is placed.
+It is built using express package with help of JADE utility.
+Run
+Need to install the required npm packages before running this.
+>> npm build
+>> npm start
 
 
