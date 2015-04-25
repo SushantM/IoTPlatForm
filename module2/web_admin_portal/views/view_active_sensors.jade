@@ -1,0 +1,30 @@
+doctype html
+html
+	head
+		title View Active Sensors
+		link(rel='stylesheet', href='/vendor/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/style.css')
+		
+	body(style={padding:'0px',background:'#f6f3f7 - #111'})
+	block content
+		table(style={width:'100%','min-width':'500px','border-collapse':'collapse','font-weight':'bold',color:'#6b6b6b'})
+			tbody
+				tr(style={height:'70px',color:'#f6f3f7',background:'#418a95',border:'0px solid'})
+					td(style={'box-sizing':'border-box','padding-left':'30px','font-size':'25px'}) ACTIVE SENSORS
+					td
+					td
+					td
+				tr(style={height:'30px',background:' #418a70',color:'#f6f3f7','font-size':'12pt',border:'0.5px solid'})
+					td(style={'box-sizing':'border-box','padding-left':'30px'})	Sensor ID
+					td(style={'box-sizing':'border-box','padding-left':'30px'})	Gateway ID
+					td(style={'box-sizing':'border-box','padding-left':'30px'})	Last Down Time
+					td(style={'box-sizing':'border-box','padding-left':'30px'})	Last Up Time
+				each sensor in sensorList 
+					tr(style={height:'50px',background:'#f8f8f8','border-bottom':'rgba(0,0,0,.05) 1px solid'})
+						td(style={'box-sizing':'border-box','padding-left':'30px'}) #{sensor.sid}
+						td(style={'box-sizing':'border-box','padding-left':'30px'}) #{sensor.gid}
+						td(style={'box-sizing':'border-box','padding-left':'30px'}) #{sensor.ldt}
+						td(style={'box-sizing':'border-box','padding-left':'30px'}) #{sensor.lut}
+	block scripts
+	
+	

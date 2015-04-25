@@ -1,0 +1,45 @@
+var http = require('http');
+var fs = require('fs');
+var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+
+var mongodbPort=config.mongodb_port;
+var registry=config.registry_name;
+var repository=config.repository_name;
+var dbName=config.db_name;
+var MongoClient = require('mongodb').MongoClient;
+DatabaseDriver = require('./databaseDriver').DatabaseDriver;
+var dbDriver;
+
+MongoClient.connect('mongodb://localhost:'+mongodbPort+'/'+dbName, function (err, database) {
+	if (err) {
+		throw err;
+		console.log("error connecting to the database");
+	}
+	else {
+		dbDriver=new DatabaseDriver(database, dbName, registry, repository, mongodbPort)
+       		console.log("successfully connected to the database "+dbDriver.db.s.databaseName);
+	}
+});
+
+
+http.createServer(function (req, res)
+{
+	//dbDriver.addNewSensor({"gatewayid":"newgateway1","sensorid":"closesensor","sensortype":"temperature","devicehandler":"handlerClassName","protocol":"wireformat","location":{"latitude":21.912, "longitude":78.519}});
+	//dbDriver.isValidGateway("newgateway1",function(result){console.log(result)});
+
+	//dbDriver.getSensorByLocation({"latitude":20.912, "longitude":77.519}, 100.0,"temperature",function(result){console.log(result)});
+
+	//dbDriver.getSensorByType("temperature", function(result){console.log(result)})
+
+
+	//dbDriver.insertToRegistry({ "gatewayid" : "IMEIgate1", "sensorid" : "IMEInewsen1", "lastdowntime" : 7.63444444444, "lastupdatetime" : 7.36247634523674});
+	var d = new Date();
+	//dbDriver.updateLastUptime("IMEInewsen1", d.getTime());
+	//dbDriver.updateLastDownTime("IMEInewsen1", d.getTime());
+	//dbDriver.isSensorActive("IMEInewsen1", 300000, function(result){console.log(result)});
+	
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	res.end('<html><body><h2>MongoDB-NodeJS server</h2><h4>Mongodb running at port : '+dbDriver.dbport+'</h4><h4>database : '+dbDriver.dbName+'</h4><h4>Registry : '+dbDriver.registry+'</h4><h4>Repository : '+dbDriver.repository+'</h4></body></html>');
+}).listen(config.server_port);
+ 
+console.log('Server running on port '+config.server_port+'.');

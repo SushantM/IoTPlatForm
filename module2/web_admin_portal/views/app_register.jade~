@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	img(src="/img/header.png" style={position:'relative','margin-left':'100px','margin-left':'0px'})
+	#login-container(style={'margin-top':'15px'})
+		form( method="post")#login-form.well.span4
+			h2 Please enter the Ambulance details.
+			label AMBULANCE ID 
+			input(type="text", name="name", id='name-tf').span4.required
+			label Start Point Latitude
+			input(type="text", name="startX", id='startX-tf').span4.required
+			label Start Point Longitude
+			input(type="text", name="startY", id='startY-tf').span4.required
+			label End Point Latitude
+			input(type="text", name="endX", id='endX-tf').span4.required
+			label End Point Longitude
+			input(type="text", name="endY", id='endY-tf').span4.required
+			button(type="submit")#btn-login.btn.btn-primary
+				| SUBMIT
+			hr
+	img(src="/img/footer.jpg" style={'margin-bottom':'0'})
+block scripts
+	
