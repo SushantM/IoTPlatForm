@@ -62,6 +62,7 @@ Inside "web_admin_portal" directory, all the code related to UI is placed.
 It is built using express package with help of JADE utility.
 Run
 Need to install the required npm packages before running this.
+
 >> npm build
 >> npm start
 
