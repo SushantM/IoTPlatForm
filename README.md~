@@ -1,17 +1,6 @@
 # IoTPlatForm
 
 
-Module1: Gateway, Sensor
-
-Inside "APK" directory there is an android app file named "Gateway.apk". Install this app on android device which you want to treat as gateway for sensors. Do same for "Sensor.apk".
-
-Turn on bluetooth of both Gateway and Sensor devices.
-
-To Start Gateway
-	-On opening Gateway app on Gateway device, click on "Start Gateway" button to activate gateway.
-
-To Start Sensor
-	-On opening Sensor app on sensor device, click on "Start Sensor" button to activate sensor.
 
 Module2: Filter Server, Registry Repository Security Severs
 

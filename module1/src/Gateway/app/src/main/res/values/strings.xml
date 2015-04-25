@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gateway</string>
+
+    <string name="gateway">Gateway 1</string>
+    <string name="pull">Start Gateway</string>
+    <string name="action_settings">Setting</string>
+</resources>
