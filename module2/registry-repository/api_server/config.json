@@ -1,0 +1,7 @@
+{
+"server_port": 8081,
+"mongodb_port": 27017,
+"db_name": "iotdb",
+"repository_name":"repository",
+"registry_name":"registry"
+}

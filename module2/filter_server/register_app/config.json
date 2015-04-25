@@ -1,0 +1,7 @@
+{
+"socket_server_ip":"10.42.0.94",
+"socket_server_port":6969,
+"filter_server_ip":"localhost",
+"filter_server_port":27017,
+"register_port":3002
+}

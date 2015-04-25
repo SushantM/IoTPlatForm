@@ -1,0 +1,42 @@
+
+extends layout
+
+block content
+		<img src="/img/header.png" id="im1"/>
+		<form id="main">
+		<link rel="stylesheet" type="text/css" href="/css/home.css" />
+		#login-container
+		<div id="f1">
+		<div id="d1">
+		<a href="app_register" class="button1">
+		<span>REGISTER APP</span>
+		</a>
+		</div>
+		<br/>
+
+		<div id="d2">
+		<a href="add_sensor" class="button2">
+		<span>ADD SENSOR</span>
+		</a>
+		</div>
+		<br/>		
+
+		<div id="d3">
+		<a href="add_gateway" class="button3">
+		<span>ADD GATEWAY</span>
+		</a>
+		</div>
+		<br/>				
+
+		<div id="d4">
+		<a href="view_active_sensors" class="button4">
+		<span>VIEW ACTIVE SENSORS</span>
+		</a>
+		</div>
+		<br/>
+		</div>
+		hr
+		</form>
+		<img src="/img/footer.jpg" id="im2">
+block scripts
+	

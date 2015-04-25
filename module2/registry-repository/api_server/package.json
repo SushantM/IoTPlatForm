@@ -1,0 +1,10 @@
+{
+  	"name": "node-api",
+  	"version": "0.0.1",
+ 	"main": "server.js",
+	"dependencies": {
+    		"mongodb": "latest",
+    		"express": "~4.0.0"
+  	}
+}
+

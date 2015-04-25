@@ -1,0 +1,21 @@
+{
+	"gatewayid":"IMEI1234",
+	"sensorid":"poorva",
+	"sensortype":"temperature",
+	"devicehandler":"handlerClassName",
+	"protocol":"wireformat",
+	"location":{"latitude":80.913, "longitude":100.519}
+}
+
+
+
+
+{
+	"gatewayid":"IMEI1234",
+	"sensorid":"poorva",
+	"sensortype":"temperature",
+	"devicehandler":"handlerClassName",
+	"protocol":"wireformat",
+	"lat":80.913,
+	"long":100.519
+}
