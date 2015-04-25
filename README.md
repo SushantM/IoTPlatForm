@@ -1,21 +1,21 @@
 # IoTPlatForm
 
 
-# Module1: Gateway, Sensor
+## Module1: Gateway, Sensor
 
 Inside "APK" directory there is an android app file named "Gateway.apk". Install this app on android device which you want to treat as gateway for sensors. Do same for "Sensor.apk".
 
 Turn on bluetooth of both Gateway and Sensor devices.
 
-To Start Gateway
+### To Start Gateway
 	-On opening Gateway app on Gateway device, click on "Start Gateway" button to activate gateway.
 
-To Start Sensor
+### To Start Sensor
 	-On opening Sensor app on sensor device, click on "Start Sensor" button to activate sensor.
 
-# Module2: Filter Server, Registry Repository Security Severs
+## Module2: Filter Server, Registry Repository Security Severs
 
-Filter Server
+### Filter Server
 Inside "filter_server"
 
 Inside "receive_data" directory, there are files for creating socket server and receiving data
@@ -39,7 +39,7 @@ using "detect_data.js" script previously run.
 
 >> node server.js
 
-Registry Repository Security Severs
+### Registry Repository Security Severs
 Inside "registry-repository"
 
 Inside "boot_strap" directory, socket server which exposes socket APIS to gateway are kept.
@@ -49,6 +49,7 @@ Database used for registry, repository and security is "iotdb"
 run
 
 >> bash setup.sh
+
 >> node boot_strap.sh
 
 Inside "api_server" directory, all the apis for accessing the repository and registry are kept.
@@ -56,7 +57,7 @@ Install all the packages needed using npm. To expose the APIs, run
 
 >> node server.js
 
-Web UI Portal
+### Web UI Portal
 
 Inside "web_admin_portal" directory, all the code related to UI is placed.
 It is built using express package with help of JADE utility.
@@ -66,11 +67,10 @@ Need to install the required npm packages before running this.
 >> npm build
 >> npm start
 
-# Module 3
-App Engine server and apps
+## Module 3 App Engine server and apps
 
+### App Engine
 Start the server to register new apps
-
 Enter app_register folder
 Config file can be edited to change ip and port addresses.
 
@@ -89,9 +89,14 @@ Enter postAppData_helper directory and run helper.js
 
 >>node helper.js
 
+### User Applications
+
+
+
 
 This platform was developed by following students under the guidance of Mr. Ramesh Loganathan
 as part of Internal of Application server course.
+	
 1. Gangasagar Patil
 2. Poorva Bhawsar
 3. Sushant Makode
