@@ -91,14 +91,7 @@ Enter postAppData_helper directory and run helper.js
 
 ### User Applications
 
-1. Doctor Application.
-Install the doctor.apk in the android device of the doctor. He will monitor the vital signs of the patient to give directions to the attendant on what to do.
 
-2. Attendant Application.
-Install the attendant.apk in the android device of the attendant who is in the ambulance with the patient. He will receive directions from the doctor for the patient.
-
-3. Navigation application.
-Install the navigation.apk in the android device of the ambulance driver. This will give him the shortest/least congested path to the hospital.
 
 
 This platform was developed by following students under the guidance of Mr. Ramesh Loganathan
